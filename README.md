@@ -20,69 +20,7 @@
    Generator는 이때 MSE, SSE등의 loss를 사용할 수 있고, Discriminator는 binary classification이므로 binary cross entropy를 사용하는 것이 일반적이다.
       
 5. Code
-      [Uploading GAN.ip{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": []
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "code",
-      "execution_count": null,
-      "metadata": {
-        "id": "cYjRlX40jA52"
-      },
-      "outputs": [],
-      "source": [
-        "#Generator\n",
-        "import torch.nn as nn\n",
-        "\n",
-        "G = nn.Sequential(\n",
-        "    nn.Linear(100, 256),\n",
-        "    nn.ReLU(),\n",
-        "    nn.Dropout(0.1),\n",
-        "    nn.Linear(256, 256),\n",
-        "    nn.ReLU(),\n",
-        "    nn.Dropout(0.1),\n",
-        "    nn.Linear(256, 28 * 28),\n",
-        "    nn.Tanh()\n",
-        ").to('cpu')"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#Descriminator\n",
-        "\n",
-        "D = nn.Sequential(\n",
-        "    nn.Linear(28 * 28, 256),\n",
-        "    nn.LeakyReLU(),\n",
-        "    nn.Dropout(0.1),\n",
-        "    nn.Linear(256, 256),\n",
-        "    nn.LeakyReLU(),\n",
-        "    nn.Dropout(0.1),\n",
-        "    nn.Linear(256, 1),\n",
-        "    nn.Sigmoid()\n",
-        ")"
-      ],
-      "metadata": {
-        "id": "RZ48u7TojDYD"
-      },
-      "execution_count": null,
-      "outputs": []
-    }
-  ]
-}ynb…]()
+
 
 7. Example
 
