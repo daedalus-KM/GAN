@@ -19,11 +19,6 @@
       하지만 Loss를 최소화 시켜야 하는 Generator입장에서는 본인이 생성한 가짜 데이터를 Discriminator가 진짜라고 예측(Discriminator가 1을 출력)해야 두번째 항이 최소가 된다.
    Generator는 이때 MSE, SSE등의 loss를 사용할 수 있고, Discriminator는 binary classification이므로 binary cross entropy를 사용하는 것이 일반적이다.
       
-5. Code
-
-
-7. Example
-
 Referneces
 1. https://velog.io/@hyebbly/Deep-Learning-Loss-%EC%A0%95%EB%A6%AC-1-GAN-loss
 2. https://baechu-story.tistory.com/12
