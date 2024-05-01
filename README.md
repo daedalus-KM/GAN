@@ -8,7 +8,10 @@
 
  
 2. Loss Function
+   
    ![image](https://github.com/daedalus-KM/GAN/assets/85052989/613767a6-b13d-4b2b-a645-2b06f419f90c)
+   
+   
    간단하게 설명하면, Generator는 해당 Loss function을 최소화 시키려고 하고, Discriminator는 최대화 시키려고 한다.
    2-1. First term
       첫번째 항은 진짜 데이터 x를 Discriminator의 입력으로 사용하였을 때의 결과에 log를 취한 기댓값이다.
